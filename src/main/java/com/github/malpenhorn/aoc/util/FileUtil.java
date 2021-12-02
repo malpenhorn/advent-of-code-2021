@@ -20,4 +20,10 @@ public class FileUtil {
                 new InputStreamReader(inputStream))
                 .lines();
     }
+
+    public static List<String> readFileAsListOfStrings(String fileName){
+        InputStream inputStream = FileUtil.class.getResourceAsStream("/" + fileName);
+        return getStreamOfStrings(inputStream)
+                .collect(Collectors.toList());
+    }
 }
