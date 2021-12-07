@@ -133,4 +133,16 @@ public class Tests {
                 "5,5 -> 8,2");
         assertEquals(12, Day05.part2(input));
     }
+
+    @Test
+    void testDay06Part1() {
+        List<Integer> input = Arrays.asList(3,4,3,1,2);
+        assertEquals(5934, Day06.simulate(input, 80));
+    }
+
+    @Test
+    void testDay06Part2() {
+        List<Integer> input = Arrays.asList(3,4,3,1,2);
+        assertEquals(26984457539L, Day06.simulate(input, 256));
+    }
 }
