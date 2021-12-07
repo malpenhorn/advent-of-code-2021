@@ -101,4 +101,36 @@ public class Tests {
                 "2  0 12  3  7");
         assertEquals(1924, Day04.part2(input));
     }
+
+    @Test
+    void testDay05Part1() {
+        List<String> input = Arrays.asList(
+                "0,9 -> 5,9",
+                "8,0 -> 0,8",
+                "9,4 -> 3,4",
+                "2,2 -> 2,1",
+                "7,0 -> 7,4",
+                "6,4 -> 2,0",
+                "0,9 -> 2,9",
+                "3,4 -> 1,4",
+                "0,0 -> 8,8",
+                "5,5 -> 8,2");
+        assertEquals(5, Day05.part1(input));
+    }
+
+    @Test
+    void testDay05Part2() {
+        List<String> input = Arrays.asList(
+                "0,9 -> 5,9",
+                "8,0 -> 0,8",
+                "9,4 -> 3,4",
+                "2,2 -> 2,1",
+                "7,0 -> 7,4",
+                "6,4 -> 2,0",
+                "0,9 -> 2,9",
+                "3,4 -> 1,4",
+                "0,0 -> 8,8",
+                "5,5 -> 8,2");
+        assertEquals(12, Day05.part2(input));
+    }
 }
