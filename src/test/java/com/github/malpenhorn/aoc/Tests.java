@@ -145,4 +145,16 @@ public class Tests {
         List<Integer> input = Arrays.asList(3,4,3,1,2);
         assertEquals(26984457539L, Day06.simulate(input, 256));
     }
+
+    @Test
+    void testDay07Part1() {
+        List<Integer> input = Arrays.asList(16,1,2,0,4,2,7,1,2,14);
+        assertEquals(37, Day07.part1(input));
+    }
+
+    @Test
+    void testDay07Part2() {
+        List<Integer> input = Arrays.asList(16,1,2,0,4,2,7,1,2,14);
+        assertEquals(168, Day07.part2(input));
+    }
 }
